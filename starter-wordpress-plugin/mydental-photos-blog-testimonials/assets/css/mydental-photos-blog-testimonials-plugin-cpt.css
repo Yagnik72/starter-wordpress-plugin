@@ -1,0 +1,1146 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* .entry-header,
+header,
+footer {
+  display: none;
+} */
+
+.entry-header {
+  display: none;
+}
+
+:root {
+  --widget-text-color: #473b68;
+  --wpvcp-primary: #9DC3CF;
+  --wpvcp-bg: #253039;
+  --wpvcp-white: #FFFFFF;
+  --wpvcp-black: #000000;
+}
+
+.outfit h1,
+.outfit h2,
+.outfit h3,
+.outfit h4,
+.outfit h5,
+.outfit h6,
+.outfit p,
+.outfit a,
+.outfit span,
+.outfit label {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  color: var(--widget-text-color);
+}
+
+article {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.section-banner,
+.section-choose,
+.section-character,
+.section-form {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.image_banner_section {
+  background-color: var(--wpvcp-bg);
+  padding: 70px 0;
+}
+
+.image_banner_wrapper {
+  position: relative;
+  margin: 0 -15px;
+}
+
+.image_banner_row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.image_banner_column {
+  width: 50%;
+  padding: 0 15px;
+  position: relative;
+}
+
+.left_column_image img {
+  display: block;
+}
+
+.image_banner_heading h1 {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--wpvcp-primary);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.image_banner_para p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--wpvcp-primary);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.start_vc_btn {
+  margin-top: 40px;
+}
+
+.start_vc_btn a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--wpvcp-bg);
+  background-color: var(--wpvcp-primary);
+  border: 2px solid var(--wpvcp-white);
+  border-radius: 10px;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  box-shadow: 3px 3px 0 var(--wpvcp-white);
+}
+
+.image_banner_left_column_content {
+  width: 100%;
+}
+
+.left_column_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_banner_right_column_content {
+  max-width: 410px;
+}
+
+section.section-choose button.back-button {
+  color: var(--wpvcp-bg);
+  background-color: var(--wpvcp-white);
+}
+
+.choose_section,
+.consult_form_section {
+  background-color: var(--wpvcp-bg);
+  padding: 150px 0;
+}
+.mydental-photos-blog-testimonials-main section {
+  position: relative;
+}
+.mydental-photos-blog-testimonials-main button.back-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: var(--wpvcp-bg);
+  color: var(--wpvcp-white);
+  padding: 9px 20px;
+}
+
+.choose_wrapper {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.choose_heading h2 {
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--wpvcp-primary);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.choose_heading h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 150px;
+  height: 1px;
+  background-color: var(--wpvcp-primary);
+}
+
+.choose_para p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--wpvcp-primary);
+  margin: 0;
+}
+
+.model_title h3 {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--wpvcp-primary);
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.choose_option_wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.choose_block {
+  padding: 0 30px;
+}
+
+.choose_block:first-child {
+  padding-left: 0;
+}
+
+.choose_block:last-child {
+  padding-right: 0;
+}
+
+.choose_box {
+  position: relative;
+  background-color: var(--wpvcp-white);
+  box-shadow: 0 5px 13px -1px rgba(0, 0, 0, 0.25);
+  width: 150px;
+  height: 150px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.choose_box:hover {
+  background-color: var(--wpvcp-primary);
+}
+
+.choose_box:hover .choose_icon img {
+  filter: brightness(0) invert(0);
+}
+
+.choose_box:hover .choose_title h3 {
+  color: var(--wpvcp-black);
+}
+
+.choose_icon img {
+  display: block;
+  transition: 0.25s ease-in-out;
+}
+
+.choose_title h3 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wpvcp-bg);
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  transition: 0.25s ease-in-out;
+}
+
+.consult_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.consult_column {
+  width: 50%;
+}
+
+.consult_left_column {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consult_left_content_box {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.consult_continue_btn {
+  margin-top: 50px;
+  display: none;
+}
+
+.consult_continue_btn a {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--wpvcp-primary);
+  background-color: transparent;
+  border: 1px solid var(--wpvcp-primary);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  transition: 0.25s ease-in-out;
+  text-decoration: none !important;
+}
+
+.consult_continue_btn a::before,
+.consult_continue_btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--wpvcp-primary);
+  border-radius: 50%;
+}
+
+.consult_continue_btn a::before {
+  -webkit-animation: button-grow 2s linear infinite;
+  animation: button-grow 2s linear infinite;
+}
+
+.consult_continue_btn a::after {
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+  -webkit-animation: button-grow 2s linear 1s infinite;
+  animation: button-grow 2s linear 1s infinite;
+}
+
+@keyframes button-grow {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.consult_form_content {
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.consult_form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.consult_form .form_field {
+  margin-bottom: 20px;
+}
+
+.consult_form .form_field:last-child {
+  margin-bottom: 0;
+}
+
+.consult_form .form_field label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--wpvcp-primary);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.consult_form .form_field input {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--wpvcp-black);
+  background-color: var(--wpvcp-white);
+  border: 1px solid #777;
+  border-radius: 4px;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.consult_form .form_field.checkbox_field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.consult_form .form_field.checkbox_field input {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+.consult_form .form_field.checkbox_field label {
+  line-height: 15px;
+  margin: 0;
+}
+
+.form_field.submit_btn {
+  margin-top: 40px;
+}
+
+.form_field.submit_btn input {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--wpvcp-bg);
+  background-color: var(--wpvcp-white);
+  border: 1px solid #ceac5d;
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.25s ease;
+}
+
+.consult_svg svg {
+  max-height: 75vh;
+  display: block;
+}
+
+.consult_section {
+  background-color: var(--wpvcp-bg);
+}
+
+.consult_right_column {
+  background-color: var(--wpvcp-white);
+  padding-top: 50px;
+}
+
+.consult_right_column_image {
+  /* background-image: url(http://mydentaltouchsocial.com/wp-content/uploads/2024/02/male_character.png); */
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/male_c_2.png);
+
+  background-position: center;
+  background-size: contain;
+  /* background-size: 51%; */
+  background-repeat: no-repeat;
+}
+
+.consult_section.character-female .consult_right_column_image {
+  /* background-image: url(https://mydentaltouchsocial.com/wp-content/uploads/2024/02/Female_character_2k.png); */
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/female_c_2.png);
+}
+
+.consult_section.character-female
+  .consult_right_column_content.show_back_side
+  .consult_right_column_image {
+  /* background-image: url(https://mydentaltouchsocial.com/wp-content/uploads/2024/02/Female_character_back_2k.png); */
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/Female_Back_Final.png);
+}
+
+.svg-opacity {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  fill: #2af4cd;
+  cursor: pointer;
+}
+
+.svg-opacity.hover {
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
+  cursor: pointer;
+  animation: none;
+}
+
+.consult_btn_wrapper {
+  margin-top: 50px;
+}
+
+.consult_btn_row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.consult_btn_column {
+  width: 50%;
+}
+
+.consult_side_btn,
+.consult_finish_btn {
+  height: 65px;
+}
+
+.consult_side_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--wpvcp-primary);
+}
+
+.side_title h3,
+.finish_btn_title h3 {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--wpvcp-white);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.consult_finish_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--wpvcp-bg);
+  cursor: pointer;
+}
+
+.consult_swicth_btn {
+  margin: 0 10px;
+}
+
+.consult_swicth_btn .switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 25px;
+  border-radius: 20px;
+  background: rgb(37 48 57 / 20%);
+  transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.consult_swicth_btn .switch::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background: var(--wpvcp-white);
+  border-radius: 50%;
+  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.consult_swicth_btn .switch:active::before {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(128, 128, 128, 0.1);
+}
+
+.consult_swicth_btn input:checked + .switch {
+  background: var(--wpvcp-bg);
+}
+
+.consult_swicth_btn input:checked + .switch::before {
+  left: 37px;
+  background: var(--wpvcp-white);
+}
+
+.consult_swicth_btn input:checked + .switch:active::before {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
+}
+
+.finish_btn_arrow {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.finish_btn_arrow img {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.consult_finish_btn:hover .finish_btn_arrow {
+  transform: translateX(10px);
+}
+
+.open_popup_btn {
+  text-align: center;
+}
+
+.open_popup_btn a {
+  display: inline-block;
+  background: #e74a54;
+  color: var(--wpvcp-white);
+  padding: 10px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.consult_popup.overlay {
+  background: rgb(0 0 0 / 75%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.consult_popup.overlay.open_popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.consult_popup.overlay.open_popup .content {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  bottom: auto;
+}
+
+.consult_popup.overlay .content {
+  background: var(--wpvcp-bg);
+  position: absolute;
+  top: -50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 630px;
+  height: fit-content;
+  margin: auto;
+  box-shadow: 0 0 3em -0.5em #252525;
+  padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+}
+
+.consult_popup #close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.consult_popup #close img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.consult_topic_heading {
+  text-align: center;
+}
+
+.consult_topic_heading h3 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wpvcp-primary);
+  margin: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.consult_topic_para p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--wpvcp-primary);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.consult_list_form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 8px;
+  row-gap: 15px;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+.consult_form_field input {
+  display: none;
+}
+
+.consult_form_field label {
+  position: relative;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wpvcp-primary);
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  break-inside: avoid-column;
+  transition: all 0.3s ease;
+}
+
+.consult_form_field label:hover {
+  color: var(--wpvcp-bg);
+  background-color: var(--wpvcp-primary) !important;
+}
+
+.add_consultation_btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.add_consultation_btn a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wpvcp-primary);
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--wpvcp-primary);
+  border-radius: 4px;
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  text-decoration: none !important;
+}
+
+.add_consultation_btn a img {
+  display: block;
+  width: 20px;
+}
+
+body.overflow_hidden {
+  overflow: hidden;
+}
+/* 
+body .more_concern_btn_wrapper {
+  display: flex;
+} */
+
+.consult_form .form_field label.error {
+  color: #cf9da3;
+}
+.add_more_concern_heading {
+  text-align: center;
+}
+
+.add_more_concern_heading h3 {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--wpvcp-primary);
+  margin: 0;
+  max-width: 85%;
+}
+
+.add_more_concern_icon {
+  text-align: center;
+}
+
+.add_more_concern_icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.more_concern_btn_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 20px;
+}
+
+.more_concern_btn_wrapper .add_consultation_btn {
+  margin: 0;
+}
+
+.more_concern_btn_wrapper .add_consultation_btn a {
+  max-width: 100%;
+}
+
+.consult_popup.overlay.warning_popup .content {
+  background: transparent;
+  box-shadow: none;
+}
+
+.warning_heading h3 {
+  color: var(--wpvcp-white);
+}
+
+.add_consultation_btn.warning_btn {
+  margin-top: 0;
+}
+
+.add_consultation_btn.warning_btn a {
+  color: var(--wpvcp-white);
+  border-color: var(--wpvcp-white);
+  border-radius: 0;
+  justify-content: center;
+}
+
+.consult_right_column_content.show_back_side .consult_right_column_image {
+  /* background-image: url(http://mydentaltouchsocial.com/wp-content/uploads/2024/02/Male_character_Back.png); */
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/Male_Back_Final.png);
+}
+
+.consult_right_column_content.show_man_closeup_side
+  .consult_right_column_image {
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/man_character_closeup.png);
+}
+
+.consult_section.character-female
+  .consult_right_column_content.show_man_closeup_side
+  .consult_right_column_image {
+  background-image: url(/wp-content/plugins/mydental-photos-blog-testimonials/assets/image/Female_character_face_and_neck.png);
+}
+
+.consult_svg svg.man_closeup_svg,
+.consult_svg svg.back_side_svg {
+  display: none;
+}
+
+.consult_right_column_content.show_back_side .consult_svg svg.front_side_svg {
+  display: none;
+}
+
+.consult_right_column_content.show_back_side .consult_svg svg.back_side_svg {
+  display: block;
+}
+
+.svg-opacity[data-id="all_body_part"].hover {
+  opacity: 0;
+}
+
+.consult_svg {
+  display: flex;
+}
+
+.consult_list_form .consult_form_field input[type="checkbox"]:checked + label {
+  color: var(--wpvcp-bg);
+  background-color: var(--wpvcp-primary) !important;
+}
+
+.consult_finish_btn.return_body_btn {
+  flex-direction: row-reverse;
+  display: none;
+  border-right: 1px solid var(--wpvcp-white);
+}
+
+.consult_finish_btn.return_body_btn .finish_btn_arrow {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.consult_finish_btn.return_body_btn .finish_btn_arrow img {
+  transform: rotate(180deg);
+}
+
+.consult_finish_btn.return_body_btn:hover .finish_btn_arrow {
+  transform: translateX(-10px);
+}
+
+.consult_right_column_content.show_man_closeup_side .consult_btn_wrapper {
+  margin: 0;
+}
+
+@keyframes svg-pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.thank_you_section {
+  padding-top: 80px;
+}
+
+.thank_you_content {
+  text-align: center;
+}
+
+.thank_you_form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank_you_form .filter-label {
+  display: inline-block;
+  background-color: transparent;
+  color: #917eb4;
+  border: 1px solid #917eb4;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.thank_you_form .filter-label:hover {
+  color: var(--wpvcp-white);
+  background-color: var(--wpvcp-black);
+}
+
+.thank_you_form .filter-label.active {
+  color: var(--wpvcp-white);
+  background-color: var(--wpvcp-black);
+}
+
+.thank_you_form .filter-label input {
+  display: none;
+}
+
+.treatment-section {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.treatment-section.active {
+  display: block;
+}
+
+.treatment_wrapper {
+  margin-top: 50px;
+}
+
+.treatment-section h2 {
+  margin-bottom: 5px;
+}
+
+.treatment-section ul {
+  margin: 0;
+}
+
+.thank_you_bottom_para p {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--wpvcp-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  display: none;
+}
+
+/* Max Width CSS */
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .left_column_image {
+    position: initial;
+  }
+  .left_column_image img {
+    max-width: 100%;
+    width: 450px;
+    height: 450px;
+  }
+  .image_banner_wrapper {
+    background-color: var(--wpvcp-bg);
+    padding: 30px;
+  }
+  .consult_list_form {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .svg-opacity {
+    animation: svg-pulse 2s ease-out 0s alternate infinite none running;
+  }
+}
+
+@media (max-width: 768px) {
+  .consult_continue_btn {
+    display: block;
+  }
+  .consult_column,
+  .consult_btn_column {
+    width: 100%;
+  }
+  .consult_left_column {
+    padding: 100px 0;
+  }
+  .consult_right_column {
+    display: none;
+    padding: 50px 0;
+  }
+  .consult_left_btn {
+    display: none;
+  }
+  .thank_you_form .filter-label {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .image_banner_wrapper {
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .image_banner_row {
+    flex-direction: column;
+  }
+  .image_banner_column {
+    width: 100%;
+    padding: 0;
+  }
+  .image_banner_left_column {
+    display: none;
+  }
+  .image_banner_heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .choose_box {
+    width: 100px;
+    height: 100px;
+  }
+  .consult_popup.overlay .content {
+    max-width: calc(100% - 60px);
+    padding: 30px 20px;
+  }
+  .choose_block {
+    padding: 0 15px;
+  }
+  .choose_icon img {
+    width: 25px;
+  }
+  .choose_title h3 {
+    margin-top: 10px;
+  }
+  .consult_topic_heading h3 {
+    letter-spacing: 2px;
+  }
+  .consult_list_form {
+    row-gap: 10px;
+  }
+  .consult_form_field label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .add_consultation_btn a {
+    font-size: 16px;
+  }
+  .add_consultation_btn a img {
+    width: 18px;
+  }
+  .more_concern_btn_wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 0;
+    row-gap: 15px;
+  }
+  .more_concern_btn_wrapper .add_consultation_btn a {
+    justify-content: center;
+  }
+  .more_concern_btn_wrapper .add_consultation_btn a img {
+    margin-left: 10px;
+  }
+  .add_more_concern_heading h3 {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  .start_vc_btn a {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .add_more_concern_heading h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
