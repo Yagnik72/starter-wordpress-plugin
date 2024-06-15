@@ -52,7 +52,7 @@ class KamalDhariPractical {
 	function kamal_dhari_practical_test_include_files(){
 
 		/* Shortcode file */
-		require_once KDPT_PATH . 'inc/pricing-table.php';
+		require_once KDPT_PATH . 'inc/rest-api.php';
 		
 	}
 
