@@ -27,10 +27,10 @@ class KamalDhariPractical {
 	function __construct() {
 	
 			// enqueue scripts
-			add_action( 'wp_enqueue_scripts', array( $this , 'kamal_dhari_practical_test_scripts' ), 20 );
+			add_action( 'wp_enqueue_scripts', array( $this , 'enqueue_scripts' ), 20 );
 
 			// include files
-			add_action( 'init', array( $this , 'kamal_dhari_practical_test_include_files') );
+			add_action( 'init', array( $this , 'include_files') );
 
 	}
 
@@ -38,21 +38,31 @@ class KamalDhariPractical {
 	 * Enqueue scripts and styles.
 	 *
 	 */
-	function kamal_dhari_practical_test_scripts() {
+	function enqueue_scripts() {
 		
 		// enqueue css
-		wp_enqueue_style('dtms-shortcode-style', KDPT_ADDON_DIR . 'assets/css/kamal-dhari-practical-test.css');
+		wp_enqueue_style('kdpt-shortcode-style', KDPT_ADDON_DIR . 'assets/css/kamal-dhari-practical-test.css');
 		// enqueue js
-		wp_enqueue_script( 'dtms-shortcode-js', KDPT_ADDON_DIR . 'assets/js/kamal-dhari-practical-test.js', array('jquery'), '', true );	
+		wp_enqueue_script( 'kdpt-shortcode-js', KDPT_ADDON_DIR . 'assets/js/kamal-dhari-practical-test.js', array('jquery'), '', true );	
 	}
 
 	/**
 	 * Require files include for 
 	 */
-	function kamal_dhari_practical_test_include_files(){
+	function include_files(){
 
-		/* Shortcode file */
-		require_once KDPT_PATH . 'inc/rest-api.php';
+		/* Shortcode file */	
+		$files = [
+			'inc/rest-api.php',
+				// Add more files as needed
+		];
+
+		foreach ($files as $file) {
+				$filepath = KDPT_PATH . $file;
+				if (file_exists($filepath)) {
+						require_once $filepath;
+				}
+		}
 		
 	}
 
@@ -60,7 +70,7 @@ class KamalDhariPractical {
 	 * Not in used
 	 * Load plugin textdomain.
 	 */
-	function kamal_dhari_practical_test_addon_plugin_textdomain() {
+	function load_textdomain() {
 		load_plugin_textdomain( 'kamal-dhari-practical-test', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );	
 	}
 
